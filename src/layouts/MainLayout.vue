@@ -1,7 +1,7 @@
 <template>
 <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-        <q-toolbar>
+        <q-toolbar style="padding: 0 1rem;">
 
             <q-toolbar-title class="text-bold">
                 Madrid 2022 | OTOÑO
