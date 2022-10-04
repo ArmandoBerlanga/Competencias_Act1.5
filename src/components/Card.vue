@@ -1,5 +1,7 @@
 <script setup>
-import { ref } from 'vue';
+import {
+    ref
+} from 'vue';
 
 const props = defineProps({
     id: Number,
@@ -8,14 +10,26 @@ const props = defineProps({
     body: String
 })
 
-
 const counter = ref(0);
-
 </script>
 
 <template>
 <q-card>
-    <img :src="require(`assets/IMG_${id}.jpeg`)" alt="img" style="border-radius: 5%">
+    <div class="info-pre">
+        <img :src="require(`assets/IMG_${id}.jpeg`)" alt="img" style="border-radius: 5%">
+
+        <div id="btns">
+            <div class="fav">
+                <q-btn
+                    round
+                    color="primary"
+                    icon="favorite"
+                    size="0.8rem"
+                    @click="counter++" />
+                <div class="counter" v-if="true">{{ counter }}</div>
+            </div>
+        </div>
+    </div>
 
     <div class="info">
         <div class="title">{{ title }}</div>
@@ -25,13 +39,6 @@ const counter = ref(0);
 
         <div class="body">
             {{ body }}
-        </div>
-
-        <div id="btns">
-            <div class="fav">
-                <q-btn round color="primary" icon="favorite" size="0.8rem" @click="counter++"/>
-                <div class="counter" v-if="true">{{ counter }}</div>
-            </div>
         </div>
     </div>
 </q-card>
@@ -79,33 +86,33 @@ img {
         background-color: #7c77b970;
         margin: 0.5rem 0;
     }
+}
 
-    #btns {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        justify-content: flex-end;
-        align-content: flex-end;
-        align-items: flex-end;
-        margin-top: 1rem;
+#btns {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    // justify-content: flex-end;
+    // align-content: flex-end;
+    // align-items: flex-end;
+    margin-top: 1rem;
 
-        .fav {
-            .counter{
-                background-color: rgb(181, 5, 5);
-                color: #fff;
-                border-radius: 100%;
-                width: 1.25rem;
-                height: 1.25rem;
+    .fav {
+        .counter {
+            background-color: rgb(181, 5, 5);
+            color: #fff;
+            border-radius: 100%;
+            width: 1.25rem;
+            height: 1.25rem;
 
-                font-size: 0.7rem;
-                font-weight: 600;
-                text-align: center;
-                line-height: 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2rem;
 
-                position: relative;
-                top: -2.9rem;
-                left: 1.5rem;
-            }
+            position: relative;
+            top: -2.9rem;
+            left: 1.5rem;
         }
     }
 }

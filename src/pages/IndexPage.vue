@@ -16,20 +16,20 @@ let photos = [{
     {
         id: 2,
         title: 'Tierras lejanas',
-        subtitle: 'Ejemplo sub f2',
-        body: 'lorem ipsum dolor sit amet'
+        subtitle: 'MTY-MAD-AMS en solo 2 días',
+        body: 'Este fue el primer viaje que tuve fuera de España. Fui a Amsterdam con mi novia y una muy buena amiga por dos días. Este viaje fue toda una locura ya que fue el segundo día después de que llegué de Monterrey. De hecho para poder llegar al vuelo no pude ni siquiera dormir en el piso que había alquilado, ya que me tuve que ir a dormir al aeropuerto. Un viaje muy pintoresco lleno de nuevas personas, arquitectura impresionante, comida deliciosa y experiencias para toda la vida.'
     },
     {
         id: 1,
         title: 'Madrid 101',
-        subtitle: 'Ejemplo sub f1',
-        body: 'lorem ipsum dolor sit amet'
+        subtitle: 'Toledo mágico',
+        body: 'Un viaje muy pintoresco a Toledo, lleno de aprendizajes culturales y de hermosos paisajes. Este fue mi primer viaje a una ciudad cerca de Madrid, comparándolo sería algo así como los pueblos mágicos que estamos tan acostumbrados en Monterrey. Fue una experiencia muy acogedora y divertida de la cual pude aprender de la cultura musulmana, la arquitectura de la edad media y un poco del catolicismo. Cómo fun fact, justo esa foto me la hizo un grupo de amigos mexicanos que conocí en el viaje.'
     },
     {
         id: 5,
         title: 'Con mi amorcito',
         subtitle: 'Un viaje lleno de amor',
-        body: 'lorem ipsum dolor sit amet'
+        body: 'Tras no haber visto a mi novia después del viaje de ámsterdam nos reencontramos en Madrid. Pasaron casi 3 semanas de no vernos y fue algo muy difícil para mi. Ya que en Monterrey estamos acostumbrados a estar a 10 minutos de distancia. Ha sido toda una experiencia aprender a adaptarse a este nuevo entorno, ya que toda mi vida había vivido en un mismo entorno sin cambios tan significativos. Los mismos lugares, las mismas personas, el mismo idioma, todo lo mismo. Pero lo he estado logrando, Madrid ahora se siente como una extensión de mi hogar cada vez más.'
     }
 ];
 </script>
@@ -58,7 +58,7 @@ let photos = [{
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 0.8rem;
 }
 </style>
