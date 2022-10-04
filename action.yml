@@ -3,7 +3,6 @@ description: 'This action will handle the deployment process of your project to 
 author: 'James Ives <iam@jamesiv.es>'
 runs:
   using: 'node16'
-  main: 'dist/spa/app.b4c47fe3.js'
 branding:
   icon: 'git-commit'
   color: 'orange'
