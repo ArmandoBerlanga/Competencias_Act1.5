@@ -1,12 +1,11 @@
-const express = require('express');
-const serveStatic = require('serve-static');
-const history = require('connect-history-api-fallback');
-const enforce = require('express-sslify');
+const
+  express = require('express'),
+  serveStatic = require('serve-static'),
+  history = require('connect-history-api-fallback'),
+  port = process.env.PORT || 5000
 
-const app = express();
+const app = express()
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
-app.use(serveStatic(__dirname + '/dist/spa'));
-app.use(history());
-
-app.listen(process.env.PORT || 5000);
+app.use(history())
+app.use(serveStatic(__dirname + '/dist/spa'))
+app.listen(port)
