@@ -8,8 +8,7 @@
   "scripts": {
     "build": "quasar build",
     "start": "node server.js",
-    "heroku-postbuild": "npm i && quasar build",
-    "postinstall": "ng build"
+    "heroku-postbuild": "npm i && quasar build"
 },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
