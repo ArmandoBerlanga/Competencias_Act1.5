@@ -28,7 +28,7 @@ let photos = [{
     {
         id: 5,
         title: 'Con mi amorcito',
-        subtitle: 'Ejemplo sub f5',
+        subtitle: 'Un viaje lleno de amor',
         body: 'lorem ipsum dolor sit amet'
     }
 ]
