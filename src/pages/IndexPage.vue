@@ -31,7 +31,7 @@ let photos = [{
         subtitle: 'Un viaje lleno de amor',
         body: 'lorem ipsum dolor sit amet'
     }
-]
+];
 </script>
 
 <template>
