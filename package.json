@@ -6,7 +6,7 @@
   "author": "Armando Berlanga <Jose.berlangam@udem.edu>",
   "private": true,
   "scripts": {
-    "build": "quasar build",
+    "build": "ng build",
     "start": "node server.js",
     "heroku-postbuild": "npm i && quasar build"
 },
