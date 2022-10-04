@@ -140,8 +140,8 @@ module.exports = configure(function (ctx) {
 
 
       manifest: {
-        name: `Competencias App`,
-        short_name: `Competencias App`,
+        name: `Log madrileño`,
+        short_name: `Log madrileño`,
         description: `Tarea de competencias`,
         display: 'standalone',
         orientation: 'portrait',

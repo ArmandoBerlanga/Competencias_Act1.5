@@ -54,11 +54,12 @@ let photos = [{
     background-color: #f4f4f9;
     margin-bottom: 0.8rem;
     padding: 1rem 0;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
 }
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0.8rem;
 }
 </style>

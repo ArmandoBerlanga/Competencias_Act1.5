@@ -15,21 +15,7 @@ const counter = ref(0);
 
 <template>
 <q-card>
-    <div class="info-pre">
-        <img :src="require(`assets/IMG_${id}.jpeg`)" alt="img" style="border-radius: 5%">
-
-        <div id="btns">
-            <div class="fav">
-                <q-btn
-                    round
-                    color="primary"
-                    icon="favorite"
-                    size="0.8rem"
-                    @click="counter++" />
-                <div class="counter" v-if="true">{{ counter }}</div>
-            </div>
-        </div>
-    </div>
+    <img :src="require(`assets/IMG_${id}.jpeg`)" alt="img" style="border-radius: 5%">
 
     <div class="info">
         <div class="title">{{ title }}</div>
@@ -40,6 +26,16 @@ const counter = ref(0);
         <div class="body">
             {{ body }}
         </div>
+    </div>
+
+    <div class="fav">
+        <q-btn
+            round
+            color="primary"
+            icon="favorite"
+            size="0.8rem"
+            @click="counter++" />
+        <div class="counter" v-if="counter">{{ counter }}</div>
     </div>
 </q-card>
 </template>
@@ -56,8 +52,8 @@ const counter = ref(0);
 }
 
 img {
-    width: 12rem;
-    height: 17rem;
+    width: 11.5rem;
+    height: 18rem;
     object-fit: cover;
 }
 
@@ -70,6 +66,7 @@ img {
         font-weight: 600;
         color: #000;
         line-height: 1.5rem;
+        margin-top: 1rem;
     }
 
     .subtitle {
@@ -88,32 +85,26 @@ img {
     }
 }
 
-#btns {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    // justify-content: flex-end;
-    // align-content: flex-end;
-    // align-items: flex-end;
-    margin-top: 1rem;
+.fav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 
-    .fav {
-        .counter {
-            background-color: rgb(181, 5, 5);
-            color: #fff;
-            border-radius: 100%;
-            width: 1.25rem;
-            height: 1.25rem;
+    .counter {
+        background-color: rgb(181, 5, 5);
+        color: #fff;
+        border-radius: 100%;
+        width: 1.25rem;
+        height: 1.25rem;
 
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-align: center;
-            line-height: 1.2rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2rem;
 
-            position: relative;
-            top: -2.9rem;
-            left: 1.5rem;
-        }
+        position: relative;
+        top: -2.9rem;
+        left: 1.5rem;
     }
 }
 </style>
